@@ -41,7 +41,7 @@ sequenceDiagram
         Parser ->> Position: Position = Position.makeMove(Move)
     end
     Engine -->> Host: (no response required)
-    deactiviate Engine
+    deactivate Engine
 
     Host ->> Engine: "go movetime 10000"
     activate Engine
